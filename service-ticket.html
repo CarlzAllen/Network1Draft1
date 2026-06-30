@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | NetworkOne</title>
+    <title>Service Ticket & Complaints | NetworkOne</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <script id="tailwind-config">
@@ -17,7 +17,9 @@
                         "text-main": "#2D3142" 
                     },
                     fontFamily: { 
-                        "sans": ["Inter", "sans-serif"]
+                        "sans": ["Inter", "sans-serif"],
+                        "headline": ["Inter", "sans-serif"], 
+                        "body": ["Inter", "sans-serif"] 
                     }
                 }
             }
@@ -30,15 +32,15 @@
     <header class="w-full border-b border-gray-200 bg-white sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
             <a href="index.html" class="flex items-center">
-                <img src="NetworkOne_LOGO_2.png" alt="NetworkOne" class="h-10 w-auto object-contain">
+                <img src="NetworkOne_LOGO.png" alt="NetworkOne" class="h-10 w-auto object-contain">
             </a>
             <nav id="desktop-nav" class="hidden md:flex items-center gap-1 h-full font-bold text-sm">
                 <a href="index.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Home</a>
-                <a href="about.html" class="text-brand-green border-b-2 border-brand-green h-full flex items-center px-4">About Us</a>
+                <a href="about.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">About Us</a>
                 <a href="services.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Services</a>
                 <a href="ict-forum.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">ICT Forum</a>
                 <a href="contact.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Contact</a>
-                <a href="service-ticket.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Service Ticket</a>
+                <a href="service-ticket.html" class="text-brand-green border-b-2 border-brand-green h-full flex items-center px-4">Service Ticket</a>
             </nav>
             <div class="hidden sm:flex items-center gap-4">
                 <a href="contact.html" class="px-5 py-2.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all">Sales Inquiry</a>
@@ -46,68 +48,66 @@
         </div>
     </header>
 
-    <main class="flex-grow">
-        <!-- Corporate Story Section -->
-        <div class="py-20 bg-white border-b border-gray-100">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h1 class="text-4xl font-black text-gray-800 tracking-tight mb-2">Our Corporate Story</h1>
-                    <div class="w-12 h-1 bg-brand-green mx-auto rounded"></div>
-                </div>
-
-                <div class="grid lg:grid-cols-12 gap-12 items-start">
-                    <div class="lg:col-span-7 space-y-6">
-                        <p class="text-gray-600 text-base leading-relaxed">
-                            Since 2014, NetworkOne has served as a premier Information and Communication Technology (ICT) partner, specializing in the design and deployment of robust voice and data networks throughout the Bahamas. At the heart of everything we do is a singular mission: We help business leaders maximize their Information & Communication Technology (ICT) investment.
-                        </p>
-                        <p class="text-gray-600 text-base leading-relaxed">
-                            Our team doesn’t just work in the ICT space; we grew up in it. By blending decades of hands-on local experience with the industry’s latest technological shifts, we deliver infrastructure that is as innovative as it is reliable. We believe that technology should be a catalyst for growth, not a source of frustration, which is why we focus on solutions that are practically suited to the unique demands of your business.
-                        </p>
-                    </div>
-                    
-                    <div class="lg:col-span-5 bg-gray-50 p-8 border border-gray-200 rounded-2xl space-y-4">
-                        <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">Strategic Intent</span>
-                        <h3 class="text-xl font-bold text-gray-900">Our Mission</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed italic">
-                            “We help business leaders maximize their Information & Communication Technology investment by bridging the gap between world-class innovation and local expertise."
-                        </p>
-                    </div>
-                </div>
+    <!-- Main Content Area -->
+    <main class="flex-grow flex flex-col justify-center items-center py-20 px-6 bg-white">
+        <div class="max-w-2xl w-full text-center space-y-6">
+            <h1 class="text-4xl font-black text-gray-900 tracking-tight">Customer Support & Service Tickets</h1>
+            <p class="text-gray-500 text-base leading-relaxed">
+                Are you experiencing technical glitches, network infrastructure difficulties, or framework delivery discrepancies? Open an official corporate grievance or technical assistance request directly with our auditing panel.
+            </p>
+            <div class="w-12 h-1 bg-brand-green mx-auto rounded"></div>
+            
+            <div class="pt-6">
+                <button id="open-form-btn" class="px-8 py-4 bg-brand-blue text-white font-black text-base rounded-xl shadow-md hover:bg-opacity-90 active:scale-95 transition-all duration-150">
+                    Open Service Ticket Form
+                </button>
             </div>
         </div>
 
-        <!-- Why Partner Section -->
-        <div class="py-20 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="max-w-2xl mb-12 space-y-2">
-                    <h2 class="text-3xl font-black text-gray-800 tracking-tight">Why Partner with us</h2>
-                    <div class="w-12 h-1 bg-brand-green rounded"></div>
-                    <p class="text-sm text-gray-500 pt-2">We pride ourselves on being more than just a service provider—we are a strategic ally dedicated to ensuring your ICT budget delivers measurable results.</p>
-                </div>
+        <!-- Form Modal Overlay -->
+        <div id="form-modal" class="fixed inset-0 z-50 overflow-y-auto hidden bg-gray-950/60 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300">
+            <div class="bg-white w-full max-w-lg rounded-2xl border border-gray-200 shadow-2xl relative p-8 transform scale-95 transition-transform duration-300 space-y-6">
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
-                        <h4 class="text-lg font-bold text-gray-900 mb-2">Deep Local Roots</h4>
-                        <p class="text-sm text-gray-500 leading-relaxed">As a locally owned and operated firm, we have an intimate understanding of the Bahamian business environment and the connectivity challenges our clients face.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
-                        <h4 class="text-lg font-bold text-gray-900 mb-2">Global Standards, Local Service</h4>
-                        <p class="text-sm text-gray-500 leading-relaxed">Our certified technicians are trained to rigorous international standards, ensuring your ICT services meets world-class benchmarks.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
-                        <h4 class="text-lg font-bold text-gray-900 mb-2">Integrity-First Approach</h4>
-                        <p class="text-sm text-gray-500 leading-relaxed">We are strictly vendor-neutral. To truly help you maximize your investment, we recommend what is right for your business, not what pays the highest margins.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
-                        <h4 class="text-lg font-bold text-gray-900 mb-2">Seamless Delivery</h4>
-                        <p class="text-sm text-gray-500 leading-relaxed">From initial scoping and design to the final "go-live" and long-term support, we handle the technical heavy lifting so you can focus on leading your company.</p>
-                    </div>
+                <button id="close-form-btn" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+
+                <div>
+                    <h3 class="text-2xl font-black text-gray-900">File a Formal Service Complaint</h3>
+                    <p class="text-xs text-gray-400 mt-1">Multi-tier internal technology routing framework tier-1 triage response.</p>
                 </div>
+
+                <form action="#" class="space-y-4" onsubmit="event.preventDefault(); alert('Ticket Submitted Successfully.');">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 uppercase tracking-wider mb-2">Full Name / Corporate Entity</label>
+                        <input type="text" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 uppercase tracking-wider mb-2">Contact Email Address</label>
+                        <input type="email" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 uppercase tracking-wider mb-2">Nature of Issue / Infrastructure Core</label>
+                        <select class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all">
+                            <option>Telecom Systems & Design Inaccuracies</option>
+                            <option>Structural System Engineering Delays</option>
+                            <option>Multi-Tier Auditing Profile Issues</option>
+                            <option>General Support System Grievance</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 uppercase tracking-wider mb-2">Detailed Description of Complaint</label>
+                        <textarea rows="4" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all resize-none" placeholder="Provide framework details..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all uppercase tracking-wider">
+                        Submit Priority Ticket
+                    </button>
+                </form>
             </div>
         </div>
     </main>
 
-    <!-- Master Footer Structure -->
+    <!-- Unified Master Footer Structure (Matched with index.html) -->
     <footer class="bg-gray-950 text-gray-400 text-sm border-t border-gray-900 mt-auto">
         <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="space-y-4">
@@ -167,5 +167,24 @@
         </div>
     </footer>
 
+    <!-- Form Interactivity Script -->
+    <script>
+        const modal = document.getElementById('form-modal');
+        const openBtn = document.getElementById('open-form-btn');
+        const closeBtn = document.getElementById('close-form-btn');
+
+        openBtn.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+            setTimeout(() => modal.classList.remove('opacity-0'), 10);
+        });
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+    </script>
 </body>
 </html>

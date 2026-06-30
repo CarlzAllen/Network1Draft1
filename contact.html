@@ -17,9 +17,7 @@
                         "text-main": "#2D3142" 
                     },
                     fontFamily: { 
-                        "sans": ["Inter", "sans-serif"],
-                        "headline": ["Inter", "sans-serif"], 
-                        "body": ["Inter", "sans-serif"] 
+                        "sans": ["Inter", "sans-serif"]
                     }
                 }
             }
@@ -28,10 +26,11 @@
 </head>
 <body class="bg-surface-light font-sans text-text-main antialiased flex flex-col min-h-screen">
 
+    <!-- Header -->
     <header class="w-full border-b border-gray-200 bg-white sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
             <a href="index.html" class="flex items-center">
-                <img src="NOne_Logo2020_Final.png" alt="NetworkOne" class="h-10 w-auto object-contain">
+                <img src="NetworkOne_LOGO_2.png" alt="NetworkOne" class="h-10 w-auto object-contain">
             </a>
             <nav id="desktop-nav" class="hidden md:flex items-center gap-1 h-full font-bold text-sm">
                 <a href="index.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Home</a>
@@ -39,36 +38,39 @@
                 <a href="services.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Services</a>
                 <a href="ict-forum.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">ICT Forum</a>
                 <a href="contact.html" class="text-brand-green border-b-2 border-brand-green h-full flex items-center px-4">Contact</a>
-                <a href="sales-inquiry.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Sales Inquiry</a>
+                <a href="service-ticket.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Service Ticket</a>
             </nav>
             <div class="hidden sm:flex items-center gap-4">
-                <a href="contact.html" class="px-5 py-2.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all">Contact Us</a>
+                <a href="contact.html" class="px-5 py-2.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all">Sales Inquiry</a>
             </div>
         </div>
     </header>
 
     <main class="flex-grow py-20">
         <div class="max-w-6xl mx-auto px-6">
-            <h1 class="text-4xl font-black text-center mb-2 tracking-tight">Connect With NetworkOne</h1>
-            <div class="w-12 h-1 bg-brand-green mx-auto mb-16 rounded"></div>
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-black text-gray-800 tracking-tight mb-2">Connect With NetworkOne</h1>
+                <div class="w-12 h-1 bg-brand-green mx-auto rounded"></div>
+            </div>
             
             <div class="grid md:grid-cols-12 gap-12 items-start">
+                <!-- Service Ticket Form Panel -->
                 <div class="md:col-span-7 bg-white p-8 border border-gray-200 rounded-2xl shadow-sm space-y-4">
-                    <h3 class="text-xl font-bold text-gray-900">Inquire Corporately</h3>
+                    <h3 class="text-xl font-bold text-gray-900">Submit a Service Ticket</h3>
                     <form class="space-y-4" action="#" method="POST">
                         <div>
-                            <label class="block text-xs font-bold text-gray-600 uppercase mb-1">Company Entity Name</label>
-                            <input type="text" class="w-full border-gray-300 rounded-lg text-sm focus:ring-brand-green focus:border-brand-green" placeholder="Enterprise Ltd.">
+                            <label class="block text-xs font-bold text-gray-600 uppercase mb-1">Company / Contact Name</label>
+                            <input type="text" required class="w-full border-gray-300 rounded-lg text-sm focus:ring-brand-green focus:border-brand-green" placeholder="Enterprise Ltd.">
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-gray-600 uppercase mb-1">Secure Contact Email</label>
-                            <input type="email" class="w-full border-gray-300 rounded-lg text-sm focus:ring-brand-green focus:border-brand-green" placeholder="executive@company.com">
+                            <input type="email" required class="w-full border-gray-300 rounded-lg text-sm focus:ring-brand-green focus:border-brand-green" placeholder="technical@company.com">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-gray-600 uppercase mb-1">Message Parameters</label>
-                            <textarea rows="4" class="w-full border-gray-300 rounded-lg text-sm focus:ring-brand-green focus:border-brand-green" placeholder="Outline architectural framework needs..."></textarea>
+                            <label class="block text-xs font-bold text-gray-600 uppercase mb-1">Issue / Service Request Details</label>
+                            <textarea rows="4" required class="w-full border-gray-300 rounded-lg text-sm focus:ring-brand-green focus:border-brand-green" placeholder="Outline technical infrastructure support needs..."></textarea>
                         </div>
-                        <button type="submit" class="w-full py-3 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all uppercase tracking-wider">Transmit Parameters</button>
+                        <button type="submit" class="w-full py-3 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all uppercase tracking-wider">Submit Support Ticket</button>
                     </form>
                 </div>
 
@@ -100,49 +102,62 @@
         </div>
     </main>
 
+    <!-- Master Footer Structure -->
     <footer class="bg-gray-950 text-gray-400 text-sm border-t border-gray-900 mt-auto">
-        <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="space-y-4">
                 <img src="NetworkOne_LOGO.png" alt="NetworkOne" class="h-7 w-auto brightness-0 invert opacity-70">
-                <p class="text-xs text-gray-500 leading-relaxed">Providing high-performance structural systems engineering, reliable telecom design, and multi-tier technology framework auditing.</p>
+                <p class="text-xs text-gray-500">Providing high-performance structural systems engineering, reliable telecom design, and multi-tier technology framework auditing.</p>
             </div>
-            <div class="space-y-3">
-                <h4 class="text-white font-bold text-xs uppercase tracking-widest border-l border-gray-800 pl-3">Navigation</h4>
-                <div class="flex flex-col gap-2.5 text-xs pl-3">
-                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
-                    <a href="about.html" class="hover:text-white transition-colors">About Us</a>
-                    <a href="services.html" class="hover:text-white transition-colors">Services</a>
-                    <a href="ict-forum.html" class="hover:text-white transition-colors">ICT Forum</a>
-                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
-                    <a href="sales-inquiry.html" class="hover:text-white transition-colors">Sales Inquiry</a>
+            <div class="space-y-3 text-xs">
+                <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-3 bg-brand-green rounded-full"></span>
+                    <h4 class="text-white font-bold uppercase tracking-widest text-[11px]">Navigation</h4>
+                    <span class="flex-grow h-px bg-gray-800 ml-1"></span>
+                </div>
+                <div class="space-y-2 pl-3.5">
+                    <a href="index.html" class="block hover:text-white transition-colors">Home</a>
+                    <a href="about.html" class="block hover:text-white transition-colors">About Us</a>
+                    <a href="services.html" class="block hover:text-white transition-colors">Services</a>
+                    <a href="ict-forum.html" class="block hover:text-white transition-colors">ICT Forum</a>
+                    <a href="contact.html" class="block hover:text-white transition-colors">Contact</a>
+                    <a href="service-ticket.html" class="block hover:text-white transition-colors">Service Ticket</a>
                 </div>
             </div>
-            <div class="space-y-3">
-                <h4 class="text-white font-bold text-xs uppercase tracking-widest border-l border-gray-800 pl-3">Follow Us</h4>
-                <div class="flex flex-col gap-2.5 text-xs pl-3">
-                    <a href="https://linkedin.com" target="_blank" class="hover:text-white transition-colors">LinkedIn Profile</a>
-                    <a href="https://www.youtube.com/@networkonetalks5441" target="_blank" class="hover:text-white transition-colors">YouTube Channel</a>
+            <div class="space-y-3 text-xs">
+                <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-3 bg-brand-green rounded-full"></span>
+                    <h4 class="text-white font-bold uppercase tracking-widest text-[11px]">Follow Us</h4>
+                    <span class="flex-grow h-px bg-gray-800 ml-1"></span>
+                </div>
+                <div class="space-y-2 pl-3.5">
+                    <a href="https://linkedin.com" target="_blank" class="block hover:text-white transition-colors">LinkedIn</a>
+                    <a href="https://www.youtube.com/@networkonetalks5441" target="_blank" class="block hover:text-white transition-colors">YouTube</a>
                 </div>
             </div>
-            <div class="space-y-3">
-                <h4 class="text-white font-bold text-xs uppercase tracking-widest border-l border-gray-800 pl-3">Corporate Office</h4>
-                <div class="space-y-2 text-xs pl-3">
-                    <div class="flex items-start gap-2">
-                        <svg class="w-4 h-4 text-brand-green mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <div class="space-y-3 text-xs text-gray-500">
+                <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-3 bg-brand-green rounded-full"></span>
+                    <h4 class="text-white font-bold uppercase tracking-widest text-[11px]">Corporate Office</h4>
+                    <span class="flex-grow h-px bg-gray-800 ml-1"></span>
+                </div>
+                <div class="space-y-2.5 pl-3.5 leading-relaxed">
+                    <div class="flex items-center gap-2 text-gray-400">
+                        <svg class="w-4 h-4 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                         <span>432 Bay Street, Nassau, Bahamas</span>
                     </div>
-                    <div class="flex items-center gap-2">
-                        <svg class="w-4 h-4 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    <div class="flex items-center gap-2 text-gray-400">
+                        <svg class="w-4 h-4 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                         <span>242-328-3000</span>
                     </div>
-                    <div class="flex items-center gap-2">
-                        <svg class="w-4 h-4 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    <div class="flex items-center gap-2 text-gray-400">
+                        <svg class="w-4 h-4 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                         <span>info@networkonebahamas.com</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-6 py-6 border-t border-gray-900 text-center text-xs text-gray-600">
+        <div class="max-w-7xl mx-auto px-6 py-4 border-t border-gray-900 text-center text-xs text-gray-600">
             &copy; 2014-2026 NetworkOne. All Rights Reserved.
         </div>
     </footer>
